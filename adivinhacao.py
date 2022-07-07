@@ -3,7 +3,9 @@ print("*********************************")
 print("Bem vindo ao jogo de adivinhaçao!")
 print("*********************************")
 
-numero_secreto = int(random.random() * 100)
+numero_secreto = int(random.randrange(1,101))
+
+#print(numero_secreto)
 
 tentativas = 5
 
