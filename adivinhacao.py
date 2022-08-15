@@ -44,7 +44,7 @@ for rodada in range(1, tentativas + 1):
     # Errou
     elif (rodada <= tentativas - 1):
         # Desconta o valor correspondente a distância do numero chutado com o valor secreto
-        pontos = abs(pontos - (numero_secreto - chute))
+        pontos = pontos - abs(numero_secreto - chute)
         # Da dicas se o numero é menor ou maior.
         if (maior):
             print("Você errou! chute mais baixo.")
